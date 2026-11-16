@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Spyro Giga Pet</title>
+    <meta name="description" content="A virtual pet game starring Spyro." />
+    <link
+      id="favicon"
+      rel="icon"
+      href="images/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>This is Spyro the Giga Pet</h1>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+        <!-- Replace pet image with your own pet image -->
+        <img class="pet-image" src="images/spyro-idle.gif" />
+      </section>
+      <section class="dashboard">
+        <div>
+          Name: <strong><span class="name"></span></strong>
+        </div>
+        <div>
+          Weight: <strong><span class="weight"></span> pounds</strong>
+        </div>
+        <div>
+          Happiness:
+          <strong><span class="happiness"></span> tail wags (per min)</strong>
+        </div>
+        <div class="button-container">
+          <button class="treat-button">Treat</button>
+          <button class="play-button">Play</button>
+          <button class="exercise-button">Exercise</button>
+          <button class="flame-button">Flame</button>
+        </div>
+        <div>
+          <p class="pet-comment"></p>
+          <div class="log-header">
+            <h2>Activity Log</h2>
+            <button class="clear-log">Clear Log</button>
+          </div>
+          <ul class="activity-log"></ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
