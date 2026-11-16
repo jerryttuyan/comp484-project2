@@ -9,11 +9,7 @@ $(function () {
   $(".play-button").click(clickedPlayButton);
   $(".exercise-button").click(clickedExerciseButton);
   $(".flame-button").click(clickedFlameButton);
-  $(".clear-log").click(function () {
-    // Remove all items inside the activity log.
-    $(".activity-log").empty();
-    showPetComment("Memory Wiped!");
-  });
+  $(".clear-log").click(clickedClearLogButton);
 });
 
 // Add a variable "pet_info" equal to a object with the name (string), weight (number), and happiness (number) of your pet
@@ -97,6 +93,12 @@ function clickedFlameButton() {
 
   // Add the newest activity to the beginning of the list.
   $(".activity-log").prepend("<li>Spyro used flame!</li>");
+}
+
+function clickedClearLogButton() {
+  // Remove all items inside the activity log.
+  $(".activity-log").empty();
+  showPetComment("Memory Wiped!");
 }
 
 function checkAndUpdatePetInfoInHtml() {
