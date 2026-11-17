@@ -23,10 +23,11 @@ function playAnimation(imagePath, duration) {
 
   animationTimer = setTimeout(function () {
     document.querySelector(".pet-image").src = "images/spyro-idle.gif";
+    document.querySelector(".pet-image").alt = "Spyro the purple dragon.";
   }, duration);
 }
 
-// For bad pet owners
+// For bad pet owners, show a comment if the pet is hungry or sad. Otherwise, show the normal comment.
 function showPetComment(normalComment) {
   if (pet_info.weight === 0 && pet_info.happiness === 0) {
     $(".pet-comment").text("I need a treat and some cheering up!");

@@ -92,8 +92,13 @@ footer a {
   color: #fafafa;
 }
 
+.button-container button {
+  margin-top: 10px;
+}
+
 .clear-log {
   float: none;
+  margin-left: auto;
 }
 
 .dashboard .log-header {
